@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat&family=Poppins:ital,wght@0,400;1,300&family=Raleway&display=swap');
+
+:root {
+  --colordark: rgb(4, 4, 4);
+  --colorlight: rgb(239, 227, 4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* NAVBAR */
+
+nav {
+  background-color: #1E2852;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 10px;
+
+}
+
+#check {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+nav ul li a:hover {
+  color: #6a749d;
+}
+
+ul {
+  color: white;
+}
+
+#Items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  background-color: #25315f;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+
+}
+
+ul li {
+  display: inline-block;
+  padding: 10px;
+
+}
+
+ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.804);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.icons span:hover {
+  color: #6a749d;
+}
+
+.logo {
+  display: flex;
+  align-items: left;
+}
+
+.logo img {
+  height: 90px;
+  width: 90px;
+}
+
+
+body {
+  font-family: Arial;
+  text-align: center;
+  background-color: plum;
+}
+
+
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 2px solid grey;
+  float: left;
+  width: 450px;
+  display: flex;
+  background: #f1f1f1;
+  position: relative;
+}
+
+form.example button {
+  float: inline-end;
+  width: 50px;
+  padding: 7px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  position: relative;
+
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 60px;
+}
+
+.bannerText {
+  flex: 1;
+  opacity: 0;
+  animation: fadeInAnimation 1.5s ease-in-out forwards;
+}
+
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bannerText h1 {
+  font-size: 2rem;
+}
+
+.bannerText h3 {
+  padding: 10px 0;
+}
+
+.bannerText a {
+  text-decoration: none;
+  background-color: var(--colorlight);
+  padding: 5px 10px;
+  display: inline-block;
+  color: var(--colordark);
+  border: 2px solid var(--colordark);
+  border-radius: 8px;
+  transition: all 0.5s;
+  text-transform: uppercase;
+}
+
+.bannerText a:hover {
+  background-color: var(--colordark);
+  color: var(--colorlight);
+  border: 2px solid var(--colorlight);
+}
+
+.bannerImg {
+  flex: 1;
+}
+
+.bannerImg img {
+  width: 400px;
+  height: 400px;
+}
+
+footer {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.804)
+}
+
+.footer-links {
+  text-decoration: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.bannerText a:hover {
+  background-color: var(--colordark);
+  color: var(--colorlight);
+  border: 2px solid var(--colorlight);
+}
+
+.icons span:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+  nav {
+
+    flex-direction: column;
+  }
+
+
+  .logo {
+
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+
+  .search-container {
+
+    text-align: center;
+  }
+
+
+  .footer-section {
+
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {}
+
+@media screen and (min-width: 1025px) {}
